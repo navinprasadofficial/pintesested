@@ -2,13 +2,17 @@ source "https://rubygems.org"
 ruby "3.0.2"
 gem "rails", "~> 7.1.2"
 gem "sprockets-rails"
-gem "sqlite3", "~> 1.4"
 gem "puma", ">= 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'devise', '~> 4.9', '>= 4.9.3'
+
+group:development,:test do
+  gem "sqlite3", "~> 1.4"
+end
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
